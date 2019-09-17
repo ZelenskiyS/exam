@@ -33,11 +33,10 @@ body {
   height: 32px;
   color: #8B0000;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 30px;
   text-align: center;
   border-radius: 32px;
-  top: 84px;
-  left: 215px;
+   margin: 80px 0 0 -40px;
 }
 .people .person:hover {
   background-color: #eeeeee;
