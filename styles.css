@@ -36,7 +36,7 @@ body {
   line-height: 30px;
   text-align: center;
   border-radius: 32px;
-   margin: 80px 0 0 -40px;
+  margin: 80px 0 0 -40px;
 }
 .people .person:hover {
   background-color: #eeeeee;
