@@ -47,6 +47,11 @@ body {
   width: 240px;
   border-radius: 60px;
 }
+
+.people .person:hover .extra {
+  opacity:1;
+}
+
 .people .person .extra {
   color: black;
   line-height: 25px;
