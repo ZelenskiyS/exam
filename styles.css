@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: Arial, serif;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #2F4F4F;
+}
+
+.people {
+  margin: 30px;
+  display: grid;
+  grid-template-areas: "pers1 pers2 pers3 pers4" "pers5 pers6 pers7 pers8" "pers9 pers10 . .";
+  grid-gap: 30px 40px;
+}
+.people .person {
+  transition: 1s;
+}
+.people .person .photo {
+  height: 250px;
+  position: relative;
+}
+.people .person .photo img {
+  height: 200px;
+  width: 200px;
+  border-radius: 200px;
+  transition: 1s;
+}
+.people .person .photo .rank {
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 32px;
+  height: 32px;
+  color: #8B0000;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 32px;
+  top: 84px;
+  left: 215px;
+}
+.people .person:hover {
+  background-color: #eeeeee;
+  border-radius: 12px;
+}
+.people .person:hover img {
+  height: 240px;
+  width: 240px;
+  border-radius: 60px;
+}
+.people .person .extra {
+  color: black;
+  line-height: 25px;
+  font-size: 22px;
+  opacity: 0;
+  transition: 1s;
+}
+.people .person .extra .pay:before {
+  content: ", $";
+}
+.people .person .extra .pay:after {
+  content: "M";
+}
+
+.pers1 {
+  grid-area: pers1;
+}
+
+.pers2 {
+  grid-area: pers2;
+}
+
+.pers3 {
+  grid-area: pers3;
+}
+
+.pers4 {
+  grid-area: pers4;
+}
+
+.pers5 {
+  grid-area: pers5;
+}
+
+.pers6 {
+  grid-area: pers6;
+}
+
+.pers7 {
+  grid-area: pers7;
+}
+
+.pers8 {
+  grid-area: pers8;
+}
+
+.pers9 {
+  grid-area: pers9;
+}
+
+.pers10 {
+  grid-area: pers10;
+}
+
+@media screen and (max-width: 999px) {
+  .people {
+    grid-template-areas: "pers1 pers2" "pers3 pers4" "pers5 pers6" "pers7 pers8" "pers9 pers10";
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

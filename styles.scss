@@ -1,0 +1,79 @@
+@import "reset";
+
+.people{
+  margin: 30px;
+  display: grid;
+  grid-template-areas: "pers1 pers2 pers3 pers4" "pers5 pers6 pers7 pers8" "pers9 pers10 . .";
+  grid-gap: 30px 40px;
+
+  .person{
+    transition: 1s;
+
+    .photo{
+      height: 250px;
+      position: relative;
+
+      img{
+        height: 200px;
+        width: 200px;
+        border-radius: 200px;
+        transition: 1s;
+      }
+
+      .rank{
+        position: absolute;
+        background-color: #FFFFFF;
+        width: 32px;
+        height: 32px;
+        color: #8B0000;
+        font-size:16px ;
+        line-height: 18px;
+        text-align: center;
+        border-radius: 32px;
+        top: 84px;
+        left: 215px;
+      }
+
+
+    }
+
+    &:hover{
+      background-color:#eeeeee;
+      border-radius: 12px;
+      img{
+        height: 240px;
+        width: 240px;
+        border-radius: 60px
+      }
+    }
+    .extra{
+      color: black;
+      line-height: 25px;
+      font-size: 22px;
+      opacity: 0;
+      transition: 1s;
+      .pay{
+        &:before{
+          content: ', $';
+        }
+        &:after{
+          content: 'M';
+        }
+      }
+    }
+
+  }
+}
+
+@for $i from 1 through 10 {
+  .pers#{$i}{
+    grid-area: pers#{$i};
+  }
+}
+
+@media screen and (max-width: 999px){
+  .people{
+    grid-template-areas: "pers1 pers2" "pers3 pers4" "pers5 pers6" "pers7 pers8" "pers9 pers10";
+  }
+}
+
